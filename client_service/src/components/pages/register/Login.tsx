@@ -30,7 +30,8 @@ const Login: React.FC = () => {
       const payload = isFarmer
         ? { farmer_phone: emailOrPhone, farmer_password: password }
         : { user_email: emailOrPhone, user_password: password };
-
+      console.log(api.auth_api.defaults.baseURL);
+      
       const res = await api.auth_api.post<LoginResponse>(`/auth/${endpoint}`, payload);
   
       if(isFarmer){

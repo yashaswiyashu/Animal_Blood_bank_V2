@@ -30,7 +30,8 @@
     "start:media-dev": "cd media_service && npm i",
     "start:gateway-dev": "cd gateway_service && npm i",
     "nodemodule": "concurrently \"npm run start:client-dev\" \"npm run start:auth-dev\" \"npm run start:doctor-dev\" \"npm run start:farmer-dev\" \"npm run start:hospital-dev\" \"npm run start:organization-dev\" \"npm run start:vendor-dev\" \"npm run start:animal-enthusiast-dev\" \"npm run start:admin-dev\" \"npm run start:payment-dev\" \"npm run start:video-call-dev\" \"npm run start:media-dev\" \"npm run start:gateway-dev\" ",
-    "start": "concurrently \"npm run start:client\" \"npm run start:auth\" \"npm run start:doctor\" \"npm run start:farmer\" \"npm run start:hospital\" \"npm run start:organization\" \"npm run start:vendor\" \"npm run start:animal-enthusiast\" \"npm run start:admin\" \"npm run start:payment\" \"npm run start:video-call\" \"npm run start:media\" \"npm run start:gateway\" "
+    "start": "concurrently \"npm run start:client\" \"npm run start:auth\" \"npm run start:doctor\" \"npm run start:farmer\" \"npm run start:hospital\" \"npm run start:organization\" \"npm run start:vendor\" \"npm run start:animal-enthusiast\" \"npm run start:admin\" \"npm run start:payment\" \"npm run start:video-call\" \"npm run start:media\" \"npm run start:gateway\" ",
+    "clean:modules": "rimraf client_service/node_modules auth_service/node_modules doctor_service/node_modules farmer_service/node_modules hospital_service/node_modules organization_service/node_modules vendor_service/node_modules animal_enth_service/node_modules admin_service/node_modules payment_service/node_modules video_call_service/node_modules media_service/node_modules gateway_service/node_modules"
   },
   "keywords": [],
   "author": "",
@@ -45,5 +46,8 @@
     "form-data": "^4.0.4",
     "nodemodule": "^0.3.0",
     "react-router-dom": "^7.6.0"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   }
 }

@@ -1,47 +1,48 @@
 import axios from 'axios';
 
 const auth_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/auth/api/',
+  // baseURL: 'https://server.pranimithra.in/auth/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/auth/api/`,
   withCredentials: true
 });
 
 const farmer_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/farmer/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/farmer/api/`,
   withCredentials: true
 });
 
 const doctor_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/doctor/api/', 
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/doctor/api/`, 
   withCredentials: true
 });
 
 const hospital_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/hospital/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/hospital/api/`,
   withCredentials: true
 });
 
 const organization_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/organ/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/organ/api/`,
   withCredentials: true
 });
 
 const vendor_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/vendor/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/vendor/api/`,
   withCredentials: true
 });
 
 const ae_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/animal_enth/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/animal_enth/api/`,
   withCredentials: true
 });
 
 const admin_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/admin/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/admin/api/`,
   withCredentials: true
 });
 
 const payment_api = axios.create({
-  baseURL: 'https://server.pranimithra.in/pay/api/',
+  baseURL: `${process.env.REACT_APP_SERVER_URL}/pay/api/`,
   withCredentials: true
 });
 
