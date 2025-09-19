@@ -1,0 +1,32 @@
+.dropdown {
+  position: relative;
+}
+.dropdown-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 8px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+}
+
+.dropdown-list li {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: black;
+}
+.dropdown-list li:hover {
+  background-color: #eee;
+}
+
+.dashboard-charts {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
